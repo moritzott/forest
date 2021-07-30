@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Forest - Create your own forest soundscape</title>
+        <meta name="description" content="Forest lets you create your own forest soundscape for relaxation.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <!-- <link rel="manifest" href="site.webmanifest"> -->
+    </head>
+
+    <body class="w3-darkteal w3-content" style="max-width: 500px;">
+
+
+        <!--  H e a d e r  -->
+
+        <div class="w3-container w3-center smartphone-mobile" id="head">
+        	<div class="w3-container">
+        		<span id="openModalButton" class=" w3-container w3-right">&#9776;</span> 
+        	</div>
+            <h1 class="w3-jumbo">Forest</h1>
+            <h6>Create your own forest soundscape</h6>
+        </div>
+        <br style="height: 30px;">
+
+
+        <!-- M o d a l   E l e m e n t   t o   g e t   e x t r a   i n f o r m a t i o n  -->
+
+        <div id="infoModal" class="w3-modal w3-darkteal smartphone-mobile" >
+            <div class="w3-modal-content w3-container w3-darkteal smartphone-mobile" style="width: 500px;">
+                <div class="w3-darkteal w3-container">
+                    <header>
+                        <span id="closeModalButton" class="w3-container w3-right">&larr;</span>
+                    </header>
+                </div>
+                <div class="w3-darkteal w3-container smartphone-mobile">
+                    <h2 class="3-container w3-center w3-xxlarge">Information</h2>
+                    <p class="w3-container">Your forest will come home to you as a listening experience, no matter where you are...</p>
+                    <h5 class="w3-container">ABOUT</h5>
+                    <p class="w3-container">
+                        In a complicated and stressed world you need time to relax and get back to your full strength.
+                        One of the best things you can do then is to take a walk and find a relaxed place.
+                        But sometimes you don't have enough time to reach a near forest during a break and all you can 
+                        do is to just lay back in your chair,
+                        close your eyes and try to imagine a relaxing situation.
+                    </p>
+                    <p class="w3-container">
+                        With <strong>Forest</strong> I created an application that allows you to create your own changeable forest soundscape, 
+                        when you don‘t have the possibility to go out into a forest in real life. You can choose the soundscape
+                        and regulate intensities of elements as you wish. You like more birds? Or a waterfall? Or a walk in a rainy forest? 
+                        No problem. Your changes will act immediately. 
+                        You can build your own forest or take a sound dive in a random forest. Sit back and enjoy!
+                    </p>
+                    <h5 class="w3-container">CONTACT</h5>
+                    <p class="w3-container">If you want to contact me to report bugs or ask for new features or simply say hello:</p>
+                    <div class="w3-center">
+                        <img src="./images/mail-contact.png" alt="mailAdress" width="230px" class="">
+                    </div>
+                    
+                    <h5 class="w3-container">DONATION</h5>
+                    <p class="w3-container ">You can support me and this project by donating.
+                        There are three possibilities: via bank transfer, via <a href="https://www.paypal.com/paypalme/moritzbenjaminott">PayPal</a> or you
+                        can <a href="https://www.buymeacoffee.com/moritzott">buy me a coffee</a>.
+                    </p>
+                    <p class="w3-container">Via bank transfer: Just contact me via mail and I can 
+                        send you the bank account infos (IBAN etc.).
+                    </p>
+                    <p class="w3-container">Thank you!</p>
+                    <h5 class="w3-container">LICENCE</h5>
+                    <p class="w3-container">Forest uses the font Nunito. Nunito is distributed under another license 
+                        which is why I need to make a required notice here:
+                    </p>
+                    
+                    <p class="w3-container contributor-list">Name of used component: Nunito</p>
+                    <p class="w3-container contributor-list">Licensor: Vernon Adams</p>
+                    <p class="w3-container contributor-list">License: <a href="https://scripts.sil.org/OFL">SIL Open Font License v.1.10</a></p>
+                    <h5 class="w3-container">OFFLINE VERSION</h5>
+                    <p class="w3-container">
+                        Is there an offline version? Currently not, but I‘m working on that. If there are changes (like an offline version), 
+                        I‘ll inform you on this site. So come back and check here for the latest news.
+                    </p>
+                    <h5 class="w3-container">VERSION</h5>
+                    <p class="w3-container">Forest - Version 0.1</p>
+                    <h5 class="w3-container">EXTERNAL LINKS</h5>
+                    <p class="w3-container">
+                        The contents of this web application were written with due diligence and by the author’s best knowledge. 
+                        Currently there are three hyperlinks in this web application (PayPal, Buy me a coffee, SIL Open Font License).
+                        Since I do not have any control on the contents of these websites, only the provider of 
+                        these linked websites can be held liable, especially if the linked sites were updated after the setting of the links. 
+                        If I receive knowledge of illegal contents on these linked websites, I will delete the according links.
+                    </p>  
+                </div>
+            </div>
+        </div>
+
+        <!--  C o n t e n t   o f   t h e   p a g e  -->
+        
+        <div class="w3-container w3-center smartphone-mobile">
+
+            <!-- Birds settings-->
+
+            <div class="w3-container w3-row smartphone-mobile">
+                <div class="w3-col l5 m5 s3 w3-container">
+                    <label for="birdsPercentage" class="w3-left">Birds</label>
+                </div>
+                <div class="w3-col l7 m7 s9 w3-container">
+                    <input type="range" name="birdsPercentage" id="birdsInput" min="0" max="100">
+                </div>
+            </div>
+
+            <!-- Water settings -->
+
+            <div class="w3-container w3-row smartphone-mobile">
+                <div class="w3-col l5 m5 s3 w3-container">
+                    <label for="waterPercentage" class="w3-left">Water</label>
+                </div>
+                <div class="w3-col l7 m7 s9 w3-container">
+                    <input type="range" name="waterPercentage" id="waterInput" min="0" max="100" >
+                </div>
+            </div>
+
+            <!-- Wind settings -->
+
+            <div class="w3-container w3-row smartphone-mobile">
+                <div class="w3-col l5 m5 s3 w3-container">
+                    <label for="windPercentage" class="w3-left">Wind</label>
+                </div>
+                <div class="w3-col l7 m7 s9 w3-container">
+                    <input type="range" name="windPercentage" id="windInput" min="0" max="100">
+                </div>
+            </div>
+
+            <!-- Trees settings -->
+
+            <div class="w3-container w3-row smartphone-mobile">
+                <div class="w3-col l5 m5 s3 w3-container">
+                    <label for="treesPercentage" class="w3-left">Trees</label>
+                </div>
+                <div class="w3-col l7 m7 s9 w3-container">
+                    <input type="range" name="treesPercentage" id="treesInput" min="0" max="100">
+                </div>
+            </div>
+
+            <!-- Weather settings -->
+
+            <div class="w3-container w3-row smartphone-mobile">
+                <div class="w3-col l5 m5 s3 w3-container">
+                    <label for="weatherPercentage" class="w3-left">Weather</label>
+                </div>
+                <div class="w3-col l7 m7 s9 w3-container">
+                    <input type="range" name="weatherPercentage" id="weatherInput" min="0" max="100">
+                </div>
+            </div>
+            <br>
+            
+
+            <!-- Play Button and Random Button-->
+
+            <div class="w3-container w3-row smartphone-mobile">
+                <div class="w3-col s5 w3-container w3-mobile">
+                    <button class="w3-button w3-large w3-border w3-round-large w3-hover-darkteal w3-ripple" id="startButton" style="width: 100%;">PLAY</button>
+                </div>
+                <div class="w3-col s7 w3-container w3-mobile">
+                    <button class="w3-button w3-large w3-border w3-round-large w3-hover-darkteal w3-ripple" id="randomButton" style="width: 100%;">RANDOM FOREST</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- S c r i p t  f o r   a c t i o n  -->
+        
+        <script src="app.js" async defer></script>
+
+    </body>
+</html>
