@@ -83,14 +83,12 @@ function randomButtonAction(){
     // console.log('Enter function randomButtonAction() ...');
     insertRandomInputValues();
     
-    // if isPlaying is false then simply run startForest() 
-    // else if files are playing, then stop (stopMyForest) and startmyForest with new inputs 
-    if (isPlaying == false){
-        document.getElementById('startButton').click();
-    } else {
-        document.getElementById('startButton').click();
-            .then(document.getElementById('startButton').click());
+    // if isPlaying is true then simply run stopForest() 
+    // then start it 
+    if (isPlaying == true){
+        stopMyForest();
     }
+    startMyForest();
 }
 
 
