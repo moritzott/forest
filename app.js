@@ -299,12 +299,14 @@ function addHandlers(){
         inputFields[i].addEventListener('input', () => {
             //window.alert("Hi");
             //console.log('User Input received');
-            // if isPlaying is true then simply run stooForest() => click on startButton:
-            // then start it
-            if (isPlaying == true){
+            // if isPlaying is false then simply run startForest() by automatically clicking on button:
+            // else if files are playing, then stop (stopMyForest) and startmyForest with new inputs (2 clicks on start button)
+            if (isPlaying == false){
+                document.getElementById('startButton').click();
+            } else {
+                document.getElementById('startButton').click();
                 document.getElementById('startButton').click();
             }
-            document.getElementById('startButton').click();
         })
     }
 
