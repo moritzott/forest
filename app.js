@@ -83,12 +83,13 @@ function randomButtonAction(){
     // console.log('Enter function randomButtonAction() ...');
     insertRandomInputValues();
     
-    // if isPlaying is true then simply run stopForest() 
-    // then start it 
-    if (isPlaying == true){
-        stopMyForest();
+    // if isPlaying is false then simply run startForest() 
+    // else stop it and start it ...
+    if (isPlaying == false){
+        startMyForest();
+    } else {
+        stopMyForest().then(startMyForest());
     }
-    startMyForest();
 }
 
 
