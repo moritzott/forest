@@ -299,8 +299,8 @@ function addHandlers(){
         inputFields[i].addEventListener('change', () => {
             //window.alert("Hi");
             //console.log('User Input received');
-            // if isPlaying is false then simply run startForest() by automatically clicking on button:
-            // else if files are playing, then stop (stopMyForest) and startmyForest with new inputs (2 clicks on start button)
+            // if isPlaying is true then simply stop 
+            // then play sea with new values
             if (isPlaying == true){
                 stopMyForest();
             }
