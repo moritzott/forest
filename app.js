@@ -298,14 +298,12 @@ function addHandlers(){
     for (i = 0; i < inputFields.length; i++){
         inputFields[i].addEventListener('input', () => {
             // console.log('User Input received');
-            // if isPlaying is false then simply run startForest() by automatically clicking on button:
-            // else if files are playing, then stop (stopMyForest) and startmyForest with new inputs (2 clicks on start button)
-            if (isPlaying == false){
-                document.getElementById('startButton').click();
-            } else {
-                document.getElementById('startButton').click();
-                document.getElementById('startButton').click();
+            // if isPlaying is true then simply run stooForest() :
+            // then start it
+            if (isPlaying == true){
+                stopMyForest();
             }
+            startMyForest();
         })
     }
 
