@@ -88,8 +88,7 @@ function randomButtonAction(){
     if (isPlaying == false){
         startMyForest();
     } else {
-        stopMyForest();
-        startMyForest();
+        stopMyForest().then(startMyForest());
     }
 }
 
