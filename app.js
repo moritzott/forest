@@ -297,7 +297,7 @@ function addHandlers(){
     const inputFields = document.getElementsByTagName('input');
     for (i = 0; i < inputFields.length; i++){
         inputFields[i].addEventListener('input', () => {
-            window.alert("Hello Test");
+            window.alert("Hi");
             // console.log('User Input received');
             // if isPlaying is true then simply run stooForest() :
             // then start it
