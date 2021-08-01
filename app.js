@@ -296,7 +296,7 @@ function addHandlers(){
     // add event listeners to the inputs; if user changes input, then a function will be called
     const inputFields = document.getElementsByTagName('input');
     for (i = 0; i < inputFields.length; i++){
-        inputFields[i].addEventListener('input', () => {
+        inputFields[i].addEventListener('change', () => {
             //window.alert("Hi");
             //console.log('User Input received');
             // if isPlaying is false then simply run startForest() by automatically clicking on button:
