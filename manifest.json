@@ -1,0 +1,30 @@
+{
+    "name": "Forest - Create your own forest soundscape",
+    "short_name": "Forest",
+    "description": "With this Application you can create your own forest soundscape. You can choose the soundscape and regulate intensities of elements as you wish.",
+    "start_url": ".",
+    "background_color": "#008080",
+    "theme_color": "#008080",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+
+        {
+            "src": "/maskable_icon.png",
+            "sizes" : "192x192",
+            "type" : "image/png",
+            "purpose": "any maskable"
+        }
+
+    ]
+}
