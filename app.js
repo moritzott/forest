@@ -314,5 +314,20 @@ function addHandlers(){
 }
 
 
+function registerServiceWorker(){
+    console.log('Enter function registerServiceWorker() ...');
+    // Make sure service worker are supported
+    if ('serviceWorker' in navigator){
+        navigator.serviceWorker
+            .register('/serviceworker.js')
+            .then(registrationObject => console.log('ServiceWorker registered.'))
+            .catch(error => console.log(`ServiceWorker Error: ${error}`))
+    } else {
+        console.log('ServiceWorker not supported nor registered.');
+    }
+}
+
+
 // add primary eventListener:
-addEventListener('load', addHandlers);
+window.addEventListener('load', addHandlers);
+window.addEventListener('load', registerServiceWorker);
