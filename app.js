@@ -319,7 +319,7 @@ function registerServiceWorker(){
     // Make sure service worker are supported
     if ('serviceWorker' in navigator){
         navigator.serviceWorker
-            .register('/serviceworker.js')
+            .register('./serviceworker.js')
             .then(registrationObject => console.log('ServiceWorker registered.'))
             .catch(error => console.log(`ServiceWorker Error: ${error}`))
     } else {
