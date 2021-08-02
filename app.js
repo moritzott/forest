@@ -100,19 +100,19 @@ function playLoop(sound1, sound2){
     console.log('Playing', sound1.getAttribute('designator'));
     sound1.play();
     sound1.ontimeupdate = function (){
-        // console.log(sound1.getAttribute('designator'), ':', sound1.currentTime);
+        console.log(sound1.getAttribute('designator'), ':', sound1.currentTime);
         // double check 'isPlaying' due to an occured error, when the stop button has been clicked,
         // in 1 of 99 cases, an audio element keeps on playing
         // to check this twice: if global variable isPlaying is false: stop playing...
         if (isPlaying == false){
             sound1.pause();
-            // console.log('Enter isPlaying() == false.. in playLoop-function');
+            console.log('Enter isPlaying() == false.. in playLoop-function');
         } else {
             const buffer = 1.45; // 1.36 
             if (sound1.currentTime > sound1.duration - buffer){
                 sound1.ontimeupdate = null;
                 if (isPlaying){ // prevent new call of playLoop when stop button is clicked and asynchron function call is executed shortly after stopping;
-                    // console.log('Preparing : ', sound2.getAttribute('designator'));
+                    console.log('Preparing : ', sound2.getAttribute('designator'));
                     playLoop(sound2, sound1);
                 }
             }
