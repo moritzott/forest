@@ -10,10 +10,6 @@ The main aim is to give you a simple tool to relax and imagine yourself in a for
 You can check out the latest version:
 * [Forest](https://moritzott.github.io/forest/)
 
-## Install
-*Forest* is Progressive Web Application. You can install it via your browser. Just go to your browser menu and (depending on your browser) click on "install" or "add to home screen". When you select one of those two options <strong>Forest</strong> will be added to your homescreen. A so called "Service worker" should download all required files and save it in the browser cache (this may take a while, so you should have a good internet connection).
-**Warning:** After it is finished you sould be able start the app even if you don't have an internet connection. The PWA is in a beta status, so it might be that it only works fine with an internet connection. I recommend to use the app online until the offline support is approved.
-
 ## Bugs, Errors and new Features
 If you found a bug or want to ask for new features, you can open an [issue](https://github.com/moritzott/forest/issues) or send me an email (you can find the adress when you open the live demo and click on the menu sign. Then scroll down to *Contact*).
 
