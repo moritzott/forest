@@ -24,7 +24,7 @@ const treesOne = new Audio();
 const treesTwo = new Audio();
 
 // set Attributes (for Debugging):
-/*
+
 weatherOne.setAttribute('designator', 'rain1');
 weatherTwo.setAttribute('designator', 'rain2');
 
@@ -39,13 +39,13 @@ treesTwo.setAttribute('designator', 'trees2');
 
 waterOne.setAttribute('designator', 'water1');
 waterTwo.setAttribute('designator', 'water2');
-*/
+
 
 
 
 
 function createForest(){
-    //console.log('Enter function create Forest() ...');
+    console.log('Enter function create Forest() ...');
     // get all the user input values
     const birdsValue = document.getElementById('birdsInput').value;
     const waterValue = document.getElementById('waterInput').value;
@@ -67,7 +67,7 @@ function createForest(){
 
 
 function insertRandomInputValues(){
-    // console.log('Enter function insertRandomInputValues() ...');
+    console.log('Enter function insertRandomInputValues() ...');
     // random values between 0 .. 100 insert in all input-fields
     const forestAttributes = document.getElementsByTagName('input');
 
@@ -80,7 +80,7 @@ function insertRandomInputValues(){
 
 // when the Random-Forest Button is clicked:
 function randomButtonAction(){
-    // console.log('Enter function randomButtonAction() ...');
+    console.log('Enter function randomButtonAction() ...');
     insertRandomInputValues();
     
     // if isPlaying is true then simply run stop() 
@@ -97,7 +97,7 @@ function randomButtonAction(){
 // the next file will start playing just a bit before the current file will end...
 // the function will call itself, but with changed parameters
 function playLoop(sound1, sound2){
-    // console.log('Playing', sound1.getAttribute('designator'));
+    console.log('Playing', sound1.getAttribute('designator'));
     sound1.play();
     sound1.ontimeupdate = function (){
         // console.log(sound1.getAttribute('designator'), ':', sound1.currentTime);
@@ -197,7 +197,7 @@ function selectWindAudio(value){
 }
 
 function stopMyForest(){
-    // console.log('Enter function stopMyForest() to stop playback loop...');
+    console.log('Enter function stopMyForest() to stop playback loop...');
     isPlaying = false;
 
     // halt the audio files => double check in the function playLoop() above to halt definitive the audio files
@@ -222,7 +222,7 @@ function stopMyForest(){
 
 
 function startMyForest(){
-    // console.log('Enter startMyForest() ...');
+    console.log('Enter startMyForest() ...');
 
     document.getElementById('startButton').innerText = 'STOP'; // change inner Text, to show new function of that button (see below)
 
@@ -289,7 +289,7 @@ function openModal(){
 
 // add event-listeners to elements
 function addHandlers(){
-    // console.log('Enter function addHandlers()...');
+    console.log('Enter function addHandlers()...');
     document.getElementById('startButton').addEventListener('click', startMyForest);
     document.getElementById('randomButton').addEventListener('click', randomButtonAction);
     
@@ -298,7 +298,7 @@ function addHandlers(){
     for (i = 0; i < inputFields.length; i++){
         inputFields[i].addEventListener('change', () => {
             //window.alert("Hi");
-            //console.log('User Input received');
+            console.log('User Input received');
             // if isPlaying is true then simply stop 
             // then play sea with new values
             if (isPlaying == true){
