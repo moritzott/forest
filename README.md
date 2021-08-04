@@ -18,7 +18,7 @@ You can check out the latest version (servers might be a bit slow sometimes):
 If you have an Android mobile phone, I recommend to check out the Android-App of *Forest*. Since the servers for the web app are sometimes a bit slow, it
 is much better (performance and usage) to use an offline App. You can go the [Forest Android Repository](https://github.com/moritzott/forest-android) for installation files and info on Android.
 
-And what about iOS? I'm sorry but currently you have to use the web app.
+And what about iOS? I'm sorry but currently you have to use the [web app](https://moritzott.github.io/forest/).
 
 ## Bugs, Errors and new Features
 If you found a bug or want to ask for new features, you can open an [issue](https://github.com/moritzott/forest/issues) or send me an email (you can find the adress when you open the live demo and click on the menu sign. Then scroll down to *Contact*).
