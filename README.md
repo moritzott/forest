@@ -8,6 +8,8 @@ The main aim is to give you a simple tool to relax and imagine yourself in a for
 
 Forest is a private project that I started in June 2021. At that time I was looking for a simple solution that would allow me to quickly relax during my studies at university.
 
+![Forest Example](./example-forest.png)
+
 ## Live-Demo
 You can check out the latest version (servers might be a bit slow sometimes):
 * [Forest](https://moritzott.github.io/forest/)
