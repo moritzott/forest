@@ -313,8 +313,21 @@ function addHandlers(){
     document.getElementById('openModalButton').addEventListener('click', openModal);
 }
 
+function registerServiceWorker(){
+    console.log('Enter function registerServiceWorker() ...');
+    // Make sure service worker are supported
+    if ('serviceWorker' in navigator){
+        navigator.serviceWorker
+            .register('https://moritzott.github.io/forest/serviceworker.js')
+            .then(registrationObject => console.log('ServiceWorker registered.'))
+            .catch(error => console.log(`ServiceWorker Error: ${error}`))
+    } else {
+        console.log('ServiceWorker not supported nor registered.');
+    }
+}
 
 
 // add primary eventListener:
 window.addEventListener('load', addHandlers);
+window.addEventListener('load', registerServiceWorker);
 
