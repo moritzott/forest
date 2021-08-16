@@ -126,73 +126,73 @@ function playLoop(sound1, sound2){
 
 function selectBirdsAudio(value){
     if(value > 85){
-        return './audio/birds5.ogg';
+        return './audio/birds5.mp3';
     } else if (value > 75){
-        return './audio/birds4.ogg';
+        return './audio/birds4.mp3';
     } else if (value > 65){
-        return './audio/birds3.ogg';
+        return './audio/birds3.mp3';
     } else if (value > 45){
-        return './audio/birds2.ogg';
+        return './audio/birds2.mp3';
     } else if (value > 10){
-        return './audio/birds1.ogg';
+        return './audio/birds1.mp3';
     } else {
-        return './audio/silence.ogg';
+        return './audio/silence.mp3';
     }
 }
 
 function selectWeatherAudio(value){
     if(value > 90){
-        return './audio/rain5.ogg';
+        return './audio/rain5.mp3';
     } else if (value > 80){
-        return './audio/rain4.ogg';
+        return './audio/rain4.mp3';
     } else if (value > 70){
-        return './audio/rain3.ogg';
+        return './audio/rain3.mp3';
     } else if (value > 60){
-        return './audio/rain2.ogg';
+        return './audio/rain2.mp3';
     } else if (value > 50){
-        return './audio/rain1.ogg';
+        return './audio/rain1.mp3';
     } else {
-        return './audio/silence.ogg';
+        return './audio/silence.mp3';
     }
 }
 
 function selectTreesAudio(value){
     if(value > 90){
-        return './audio/trees3.ogg';
+        return './audio/trees3.mp3';
     } else if (value > 75){
-        return './audio/trees2.ogg';
+        return './audio/trees2.mp3';
     } else if (value > 60){
-        return './audio/trees1.ogg';
+        return './audio/trees1.mp3';
     } else {
-        return './audio/silence.ogg';
+        return './audio/silence.mp3';
     }
 }
 
 function selectWaterAudio(value){
     if(value > 90){
-        return './audio/water4.ogg';
+        return './audio/water4.mp3';
     } else if (value > 75){
-        return './audio/water3.ogg';
+        return './audio/water3.mp3';
     } else if (value > 60){
-        return './audio/water2.ogg';
+        return './audio/water2.mp3';
     } else if (value > 45){
-        return './audio/water1.ogg';
+        return './audio/water1.mp3';
     } else {
-        return './audio/silence.ogg';
+        return './audio/silence.mp3';
     }
 }
 
 function selectWindAudio(value){
     if(value > 90){
-        return './audio/wind4.ogg';
+        return './audio/wind4.mp3';
     } else if (value > 70){
-        return './audio/wind3.ogg';
+        return './audio/wind3.mp3';
     } else if (value > 60){
-        return './audio/wind2.ogg';
+        return './audio/wind2.mp3';
     } else if (value > 40){
-        return './audio/wind1.ogg';
+        return './audio/wind1.mp3';
     } else {
-        return './audio/silence.ogg';
+        return './audio/silence.mp3';
     }
 }
 
